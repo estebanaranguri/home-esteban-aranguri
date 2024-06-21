@@ -48,6 +48,25 @@ document.querySelector('.back-ab').addEventListener('click', () => {
     document.querySelector('.social').classList.toggle('show');
 })
 
+document.querySelector('.studies').addEventListener('click', () => {
+    document.querySelector('.nav-menu').classList.toggle('show');
+    document.querySelector('.xmark').classList.toggle('show');
+    document.querySelector('.studies-main').classList.toggle('show');
+    document.querySelector('.back-st').classList.toggle('show');
+    document.querySelector('.footer').classList.toggle('show');
+    document.querySelector('.social').classList.toggle('show');
+})
+
+
+document.querySelector('.back-st').addEventListener('click', () => {
+    document.querySelector('.nav-menu').classList.toggle('show');
+    document.querySelector('.studies-main').classList.toggle('show');
+    document.querySelector('.xmark').classList.toggle('show');
+    document.querySelector('.back-st').classList.toggle('show');
+    document.querySelector('.footer').classList.toggle('show');
+    document.querySelector('.social').classList.toggle('show');
+})
+
 document.querySelector('.projects').addEventListener('click', () => {
     document.querySelector('.nav-menu').classList.toggle('show');
     document.querySelector('.xmark').classList.toggle('show');
