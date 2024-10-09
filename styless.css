@@ -57,6 +57,7 @@ ul {
 /* NAV CENTER */
 
 .nav-main ul.nav-menu {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,8 +99,7 @@ ul {
 
 /* FOOTER */
 .footer {
-    
-    
+    padding: 40px;
     bottom: 3%; 
     text-align: center;
     font-size: 15px;
@@ -209,11 +209,11 @@ footer,
 /* ABOUT*/
 .about-me {
     
-   
-    
+    height: auto;
     width: 90%;
     padding: 30px;
     font-size: 2rem;
+    margin: auto;
     
     
 }
@@ -221,28 +221,52 @@ footer,
 
 
 .ab-contain {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    font-size: 1rem;
+   
+    font-size: 2rem;
+    margin: 80px 0 80px 0;
+
     
     
 }
 
 .ab-title h2 {
+
+}
+
+
+.about-me p {
     font-size: 1.5rem;
 }
 
-.about-me h2,
-.about-me p {
-    margin: 20px;
+.about-me h2 {
+    margin: 80px 20px 80px 20px;
 }
 
 .about-me p {
-    width: 40%;
+    margin: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.tech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
     
 }
 
+.besides-ab {
+    
+    margin-top: 900px;
+}
+
+.interest-ab {
+    margin-top: 1000px;
+}
 
 
 .about-me.show {
@@ -271,11 +295,10 @@ footer,
 /* STUDIES*/
 .studies-main {
     
-   
-    
     width: 90%;
     padding: 30px;
     font-size: 2rem;
+
     
     
 }
@@ -283,25 +306,42 @@ footer,
 
 
 .st-contain {
+    
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    font-size: 1rem;
-    
-    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 80px 0 80px 0;
 }
+
+
+.studies-main h3,
+.studies-main p {
+    font-size: 1.5rem;
+    margin: 50px 0 50px 0;
+} 
+
 
 .st-title h2 {
-    font-size: 1.5rem;
+    
+    margin: 80px 20px 80px 20px;
+    
 }
 
+
+.studies-main h3 {
+    
+}
 .studies-main h2,
 .studies-main p {
     margin: 20px;
 }
 
 .studies-main p {
-    width: 40%;
+   
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     
 }
 
@@ -332,28 +372,31 @@ footer,
 
 /* PROJECTS */
 .pro-main {
+
     height: 90%;
     width: 90%;
     padding: 30px;
-    display: flex;
     
-    text-align: center;
+    margin: auto;
+    
     font-size: 2rem;
    
 }
 
-
-
 .pro-main h2 {
-    font-size: 1.5rem;
+    
 
 }
  
-.pro-main h2,
-.pro-main p {
-    margin: 20px;
+.pro-main h2 {
+    margin: 80px 20px 80px 20px;
 }
 
+.pro-main h3 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 .pro-contain {
@@ -363,11 +406,8 @@ footer,
     flex-direction: column;
     align-items: center;
     text-align: center;
-     
     
 }
-
-
 
 .div-pro {
     margin: auto;
@@ -405,18 +445,24 @@ footer,
 
 /* CONTACT */
 .email {
-    z-index: 1;
-    margin: auto;
-    top: 8.5%;
-    height: 90%;
     width: 90%;
+    height: auto;
     padding: 30px;
+    margin: auto;
+       
     font-size: 2rem;
     
-    
+
 }
 
+.email-title h2 {
+    
 
+}
+
+.email-contain ul li p {
+    
+}
 
 .email-contain {
     height: 95%;
@@ -427,7 +473,17 @@ footer,
     text-align: center;
     
     
+   
 }
+
+
+
+.email h2 {
+    margin: 80px 20px 80px 20px;
+    
+    
+}
+
 
 .email-contain ul li{
     margin: 50px;
@@ -499,8 +555,9 @@ footer,
     transition: transform .3s ease-in-out;
 }
 
-.about-me, .pro-main {
-    margin: 500px auto 500px auto; 
+.about-me, .pro-main, .studies-main, .email {
+    margin: 500px auto 500px auto;
+    height: auto; 
 }
 
 
