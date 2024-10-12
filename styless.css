@@ -1231,7 +1231,16 @@ footer,
     
     .showcase p {
         width: 60%;
-        margin-top: 175%; 
+        margin-top: 175%;
+        margin-right: 15%; 
+    }
+
+    /* NAV RIGHT */
+
+    .menu-btn {
+    top: 7.5%;
+    right: 5%;
+    font-size: 0.7em;    
     }
 
 }
@@ -1252,7 +1261,8 @@ footer,
     
     .showcase p {
         width: 60%;
-        margin-top: 195%; 
+        margin-top: 195%;
+         
     }
 
     .menu-btn, .xmark, .about-me, .ab-contain, .back-ab, .pro-main, .back-pro, .email, .back-email {
