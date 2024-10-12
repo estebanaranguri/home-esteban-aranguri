@@ -713,6 +713,8 @@ footer,
     
 }
 
+
+
 .xmark.show {
     transform:  translateX(-1900px);
     transition: transform .3s ease-in-out;   
@@ -1236,11 +1238,16 @@ footer,
     }
 
     /* NAV RIGHT */
-
+    /*
     .menu-btn {
     top: 7.5%;
     right: 5%;
-    font-size: 0.7em;    
+      
+    }
+    */
+
+    .menu-btn, .xmark, .about-me, .ab-contain, .back-ab, .pro-main, .back-pro, .email, .back-email {
+        font-size: 0.8em;
     }
 
 }
@@ -1265,9 +1272,7 @@ footer,
          
     }
 
-    .menu-btn, .xmark, .about-me, .ab-contain, .back-ab, .pro-main, .back-pro, .email, .back-email {
-        font-size: 0.8rem;
-    }
+   
 
     .about-me {
         padding: 0;
