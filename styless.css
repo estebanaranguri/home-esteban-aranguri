@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -57,7 +62,6 @@ ul {
 /* NAV CENTER */
 
 .nav-main ul.nav-menu {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,10 +75,13 @@ ul {
        
 }
 
-.nav-main ul.nav-menu:hover {
+
+.nav-main ul.nav-menu li:hover {
+    
 }
 
 .nav-main ul.nav-menu li {
+    
     padding: 20px;
     margin: 20px 60px;
 
@@ -1238,18 +1245,19 @@ footer,
     }
 
     /* NAV RIGHT */
-    /*
-    .menu-btn {
-    top: 7.5%;
-    right: 5%;
-      
-    }
-    */
-
+    
+    /* OJO CADA UNO TIENE SU PROPIA MEDIDA Y DISTANCIA
     .menu-btn, .xmark, .about-me, .ab-contain, .back-ab, .pro-main, .back-pro, .email, .back-email {
         font-size: 0.8em;
+        top: 4.5%;
+        right: 7%;
     }
-
+    */
+    .menu-btn, .xmark, .about-me, .ab-contain, .back-ab, .back-st, .pro-main, .back-pro, .email, .back-email {
+        font-size: 0.8em;
+        top: 4.5%;
+        right: 7%;
+    }
 }
 
 @media(max-width:430px) {
