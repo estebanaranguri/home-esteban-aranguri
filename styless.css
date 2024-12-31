@@ -52,7 +52,18 @@ ul {
     left: 0;
     right: 0;
     padding: 0;
+}
+
+.nav-main a.logo {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5rem;
    
+    margin-left: 150px;
+    
+      
+      
 }
 
 .nav-main.show {
@@ -62,13 +73,17 @@ ul {
 /* NAV CENTER */
 
 .nav-main ul.nav-menu {
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 12.5%;
+    margin-right: 150px;
+    
+   
+    
     
     /*
+    left: 12.5%;
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.200));
     */  
@@ -83,16 +98,26 @@ ul {
 .nav-main ul.nav-menu li {
     
     padding: 20px;
-    margin: 20px 60px;
+    margin: 20px 5px;
 
 }
 
+.nav-main ul.nav-menu li a.home {
+    margin-left: ;
+}
 
 
+.nav-main ul.nav-menu li a.home, 
+.nav-main ul.nav-menu li a.about,
+.nav-main ul.nav-menu li a.studies,
+.nav-main ul.nav-menu li a.projects,
+.nav-main ul.nav-menu li a.contact {
+    margin-top: 80px;
+}
 
 .nav-menu li a {
     display: block;
-    font-size: 1rem;
+    font-size: 0.7rem;
     letter-spacing: 2px;
     
 }
@@ -104,13 +129,17 @@ ul {
    
 }
 
+
+
+
+
 /* FOOTER */
 .footer {
     padding: 40px;
     bottom: 3%; 
     text-align: center;
     font-size: 15px;
-   
+    
 }
 
 
@@ -121,9 +150,7 @@ ul {
 /* SOCIAL */
 .social {
     margin: auto;
-    position: absolute;
-    right: 8%;
-    bottom: 25%;
+    width: 10%;
     
     font-size: 0.7em;
     
@@ -135,7 +162,9 @@ ul {
 
 
 .links-social{
-      
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .links-social a {
@@ -181,11 +210,12 @@ ul {
 /* SHOWCASE */
 .showcase {
     margin: auto;
+    margin-top: 150px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 3.5rem;  
+    font-size: 3.5rem;
     
 }
 
@@ -221,7 +251,6 @@ footer,
     padding: 30px;
     font-size: 2rem;
     margin: auto;
-    
     
 }
 
@@ -301,7 +330,6 @@ footer,
 
 /* STUDIES*/
 .studies-main {
-    
     width: 90%;
     padding: 30px;
     font-size: 2rem;
@@ -472,6 +500,7 @@ footer,
 }
 
 .email-contain {
+    position: relative;
     height: 95%;
     display: flex;
     flex-direction: column;
@@ -479,11 +508,50 @@ footer,
     justify-content: center;
     text-align: center;
     
-    
    
 }
 
 
+
+.email-contain #label-email {
+    position: absolute;
+    top: 10%;
+    left: 475px;
+    transform: translateY(-40%);
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+    
+}
+
+input#iemail:focus ~ #label-email {
+    top: 0;
+    
+    font-size: 16px;
+    background: black;
+    
+    
+}
+
+.email-contain #label-mensaje {
+    position: absolute;
+    top: 50%;
+    left: 475px;
+    transform: translateY(-40%);
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+    
+}
+
+
+input#imensaje:focus ~ #label-mensaje {
+    top: 40%;
+    
+    font-size: 16px;
+    background: black;
+    
+}
 
 .email h2 {
     margin: 80px 20px 80px 20px;
@@ -496,34 +564,41 @@ footer,
     margin: 50px;
 }
 
-.go {
-    
+.email-contain #submit {
+
     padding: 20px;
 }
 
-.go, .write {
+.email-contain #imensaje, .email-contain #iemail, .email-contain #submit {
     
     background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700));
     border-radius: 10px;
+    color: white;
     
     text-align: center;
 }
 
-.write {
+.email-contain #imensaje, .email-contain #iemail {
     font-size: 15px;
     padding: 15px 100px;
     
    }
 
 
-.write:hover {
+.email-contain #imensaje:hover, .email-contain #iemail:hover {
     background: black;
+    
     
 }
 
-.go:hover {
-    background: white;
-    color: black;
+.email-contain #submit:hover {
+    background: rgb(12, 7, 65);
+    cursor: pointer;
+}
+
+.email-contain #imensaje, #iemail {
+    width: 350px;
+    height: 60px;
 }
 
 /*
